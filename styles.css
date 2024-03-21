@@ -700,6 +700,15 @@ header {
         margin-bottom: 0px;        
     }
 
+    .z-text {
+        margin-top: 70px;
+        position: absolute; 
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        z-index: 1; 
+    }
+
 }
 
 footer {
