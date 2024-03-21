@@ -19,51 +19,43 @@ header {
     align-items: center; 
 }
 
-.header-logo img{
-    margin: 10px 10px 10px 20px;
+.header-part {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    padding: 7px;
+}
+
+.header-part img{
+    margin-right: 5px;
     width: 30px;
     height: 30px;
     border-radius: 5px;
 }
 
-.header-logo p{
-    margin: 15px 30px 8px 0px;    
+.header-part p{
+    margin: 0px;
+    width:100%;    
     font-size: 20px;
     font-weight: bold;
 }
 
-.header-menu{
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.header-logo {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.header-menu a{
-    font-size: 20px;
-    margin-right: 15px;
-}
-
-.partnerBtn {
+.header-part button{
     display: flex;
     justify-content: flex-start;
     background-color: transparent;
-    height: 30px;
+    height: auto;
     width: auto;
     border-style: solid;
     margin-top: 0px;
     border-radius: 5px;
     border-width: 1px;
     border-color: #5930aa;
-    padding: 5px 20px 10px 20px;
+    padding: 5px 20px 5px 20px;
     color: lightgrey;
     font-size: 15px;
-    font-weight:normal;
+    font-weight:bold;
     cursor: pointer;
     transition: background-color 0.3s; 
 }
@@ -99,6 +91,7 @@ header {
 }
 
 .t2{
+    text-align: center;
     margin: 0px;
     font-size: 50px;
     font-weight: bold;
@@ -440,6 +433,7 @@ header {
     width: 100%;
     max-width: 900px;
     margin-right: 50px;
+    margin-left: 50px;
     margin-bottom: 100px;
     border-width: 1px;
     padding: 10px;
@@ -543,17 +537,22 @@ header {
     flex-direction: column;
 }
 
-
 .partner-picture{
-    width: 50%;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 50px;
+    margin-left: 50px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .partner-border{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .partner-ring-4{
@@ -608,13 +607,12 @@ header {
 }
 
 .z-text {
-    position: absolute; /* Устанавливаем позиционирование для .z-text */
-    top: 70%; 
-    left: -70%;
+    margin-top: 30px;
+    position: absolute; 
     font-weight: bold;
     text-align: center;
-    width: 500px;
-    z-index: 1; /* Устанавливаем z-index, чтобы .z-text был поверх других элементов */
+    width: 100%;
+    z-index: 1; 
 }
 
 .applyBtn{
@@ -633,7 +631,7 @@ header {
     transition: background-color 0.3s; 
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
     .feature-block{
         width: 100%; 
         height: 700px;
@@ -672,53 +670,37 @@ header {
         padding-right: 20px;
     }
 
+    .mm-panel{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+    }
+
+    .mm-text{
+        height: 50%;
+        width: 100%;
+    }
+
+    .mm-text p{
+        margin: 20px 10% 30px 10%;
+    }
+    
+    .mm-picture{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mm-border{
+        margin-top: 30px;
+        margin-bottom: 0px;        
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
     margin-top: 50px;
